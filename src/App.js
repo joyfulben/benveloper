@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Body from './components/Body';
+import About from './components/About';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import { HeadNav } from './components/HeadNav';
+import { NavBar } from "./components/NavBar";
+import $ from 'jquery';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App () {
+
+      
+      $(document).ready(function() {
+        $('a[href*=\\#]').on('click', function(e){
+          e.preventDefault();
+          $('html, body').animate({
+            scrollTop : $(this.hash).offset().top
+          }, 500);
+        });
+        
+      });
+    
+    return (
+      
+        <div className="App">
+          <header>
+            <HeadNav></HeadNav>
+          </header>
+          <nav>
+            <NavBar />
+          </nav>
+          <Body />
+          <About />
+          <Projects />
+          <Resume />
+        </div>
+    );
+  
 }
-
-export default App;
