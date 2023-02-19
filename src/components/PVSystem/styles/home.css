@@ -1,0 +1,139 @@
+
+.pv-system-app {
+    min-height: 100vh;
+    background-color: gold;
+}
+.header {
+    height: 70px;
+    background-image: url('/public/assets/pv_panels.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffa6003c;
+    padding: 20px 0;
+    
+}
+
+.sun-logo {
+    display: flex;
+    justify-content: center;;
+    height: 70px;
+    color: #ffa600;
+}
+.sun-logo h3 {
+    margin: 0;
+    align-items: center;
+    font-size: 60px;
+    display: flex;
+    text-shadow: 0 0 7px gold;
+    -webkit-text-stroke: 1px mintcream;
+}
+.sun-logo img {
+    align-self: center;
+    height: 60px;
+    -webkit-filter: drop-shadow(0 0 1px mintcream)
+                  drop-shadow(0 0 1px mintcream);
+    filter: drop-shadow(0 0 1px mintcream) 
+            drop-shadow(0 0 1px mintcream);
+    animation: 8s cubic-bezier(.25, .5, .5, .25) infinite rotation;
+}
+.energy-dotgov {
+    height: 500px;
+  }
+
+.e-use-calc-container {
+    background-image: radial-gradient( circle at 80px 80px, gold 15%, gold 28%, mintcream 30%, #ffbb00 40%, #ffa60010 100%);
+    padding: 20px 40px 0 40px;
+}
+.euc-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.e-consumption-calc h3 {
+    padding: 10px 0;
+    text-align: center;
+    background: #ffff0021;
+}
+.list-add-container {
+    min-height: 60vh;
+    display: flex;
+}
+.add-app-container {
+    display: flex;
+    align-items: flex-end;
+    height: 52px;
+}
+
+.app-containers {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-container {
+    margin: 0 20px;
+}
+.ecc-total {
+    margin-right: 40px;
+    display: flex;
+    height: 40px;
+}
+
+.e-consumption-calc h3, .ecc-total h4, .euc-header h2 {
+    color: orange;
+    -webkit-filter: drop-shadow(0 0 1px mintcream)
+                  drop-shadow(0 0 1px mintcream);
+    filter: drop-shadow(0 0 1px mintcream) 
+            drop-shadow(0 0 1px mintcream);
+
+}
+
+.ecc-total h4 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+form.sys-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sys-cap {
+    display: flex;
+}
+
+.sys-form-container {
+    padding: 10px;
+    background-image: linear-gradient(270deg, #ffff002a, gold)
+}
+
+.outputs-error-container {
+    margin: 10px auto;
+}
+
+.address-error h3 {
+    text-align: center;
+}
+
+.output-btn {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dashed-arrow {
+    font-size: 40px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

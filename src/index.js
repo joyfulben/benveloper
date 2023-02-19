@@ -1,17 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ErrorPage from './error-page';
+import Root from './components/PVSystem/Root';
+import Home from './components/PVSystem/Home';
+import SystemForm from './components/PVSystem/SystemForm';
+import Appliances from './components/PVSystem/Appliances';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path:"/pv-system",
+    element: <Root />,
+    children: [
+      {
+        path: "",
+        element: <Home />
+      },
+      {
+        path: "system_output",
+        element: <SystemForm />
+      },
+      {
+        path: "e_use_calc",
+        element: <Appliances />
+      },
+    ]
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
