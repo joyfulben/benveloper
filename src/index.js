@@ -11,9 +11,16 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 const router = createHashRouter([
   {
-    path:"/benveloper",
+    path:"/",
     element: <App />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "benveloper",
+        element: <App />,
+        errorElement: <ErrorPage />
+      }
+    ]
   },
   {
     path:"/pv-system",
