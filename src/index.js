@@ -13,15 +13,7 @@ const router = createHashRouter([
   {
     path:"*",
     element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "benveloper",
-        element: <App />,
-        errorElement: <ErrorPage />
-      }
-    ]
-
+    errorElement: <ErrorPage />
   },
   // {
   //   path:"/",
