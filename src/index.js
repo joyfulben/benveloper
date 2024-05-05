@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: "/benveloper",
+        element: <Home />
+      },
+      {
         path: "system_output",
         element: <SystemForm />
       },
