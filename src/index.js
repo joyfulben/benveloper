@@ -7,9 +7,9 @@ import Home from './components/PVSystem/Home';
 import SystemForm from './components/PVSystem/SystemForm';
 import Appliances from './components/PVSystem/Appliances';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path:"/benveloper",
     element: <App />,
