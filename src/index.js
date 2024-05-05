@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path:"/pv-system",
+    path:"/benveloper/pv-system",
     element: <Root />,
     children: [
       {
