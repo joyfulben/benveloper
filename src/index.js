@@ -11,7 +11,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:"/benveloper",
     element: <App />,
     errorElement: <ErrorPage />,
   },
@@ -21,10 +21,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />
-      },
-      {
-        path: "/benveloper",
         element: <Home />
       },
       {
