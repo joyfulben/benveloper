@@ -11,12 +11,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path:"/benveloper",
+    path:"benveloper",
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path:"/benveloper/pv-system",
+    path:"benveloper/pv-system",
     element: <Root />,
     children: [
       {
