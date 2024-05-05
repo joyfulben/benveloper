@@ -11,7 +11,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 const router = createHashRouter([
   {
-    path:"/",
+    path:"*",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
@@ -21,7 +21,20 @@ const router = createHashRouter([
         errorElement: <ErrorPage />
       }
     ]
+
   },
+  // {
+  //   path:"/",
+  //   element: <App />,
+  //   errorElement: <ErrorPage />,
+  //   children: [
+  //     {
+  //       path: "benveloper",
+  //       element: <App />,
+  //       errorElement: <ErrorPage />
+  //     }
+  //   ]
+  // },
   {
     path:"/pv-system",
     element: <Root />,
@@ -37,7 +50,7 @@ const router = createHashRouter([
       {
         path: "e_use_calc",
         element: <Appliances />
-      },
+      }
     ]
   }
 ]);
