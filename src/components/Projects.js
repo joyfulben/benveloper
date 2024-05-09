@@ -52,7 +52,7 @@ function Projects () {
                     </ul>
                     </div>,
                 pVOptimizer: <div>
-                    <a className='link-title' href='/pv-system'>
+                    <p className='link-title'>
                         <span>P</span>
                         <span>V</span>
                         <span></span>
@@ -65,7 +65,7 @@ function Projects () {
                         <span>z</span>
                         <span>e</span>
                         <span>r</span>
-                    </a>
+                    </p>
                     <br />
                     <ul>
                         <li>React</li>
