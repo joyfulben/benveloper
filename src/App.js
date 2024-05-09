@@ -18,7 +18,6 @@ export default function App () {
             scrollTop : $(this.hash).offset().top
           }, 500);
         });
-        
       });
     
     return (
